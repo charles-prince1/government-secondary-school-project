@@ -1,0 +1,73 @@
+form{
+      font-family: 'Times New Roman', Times, serif;
+}
+.Login_container{
+      border-radius: 9px;
+      background-color: hwb(0 100% 0% / 0.808);
+      box-shadow: 2px 3px 16px black;
+}
+.w-200{
+      width: 125%;
+}
+label{
+      display: block;
+      word-wrap: noWrap;
+}
+.border{
+      border: none;
+      padding: 4px 16px;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      color: white;
+}
+.Sch_name{
+      font-weight: bold;
+      text-shadow: none;
+}
+.intro{
+      font-family: 'Times New Roman', Times, serif;
+      letter-spacing: 0.04cm;
+}
+.bg{
+      background-color: rgb(51, 198, 235);
+      display: flex;
+      flex-direction: column;
+}
+.Create_Account{
+      display: block;
+      margin-top: 18px;
+      text-decoration: none;
+      font-family: 'Times New Roman', Times, serif;
+      text-align: center;
+      font-size: 1.2em;
+}
+.direction{
+      display: flex;
+      width: 100%;
+      height: 100vh;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem 3rem;
+      box-sizing: border-box;
+}
+.with{
+      width: 40%;
+      /* height: 400px; */
+}
+
+@media screen and (min-width:412px) and (max-width: 1023px) {
+      .direction{
+            display: grid;
+            /* grid-template-rows: 1fr 1fr; */
+      }
+      .width{
+            width: 100%;
+            padding: 10px 15px;
+      }
+      input[type='text'], input[type='password']{
+            width: 105%;
+      }
+
+      
+}

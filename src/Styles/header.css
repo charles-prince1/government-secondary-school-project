@@ -1,0 +1,149 @@
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+}
+/* body {
+  background-color: hsla(0, 0%, 79%, 0.411);
+} */
+.contact_Information {
+  display: flex;
+  margin: auto;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 2px;
+  height: 2rem;
+}
+.container-for-informatio-and-contact {
+  background-color: hsl(0, 0%, 0%);
+  width: 100%;
+}
+.collegeinfo {
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  font-style: italic;
+  padding-left: 6px;
+}
+.topnav-icons {
+  color: hsl(0, 0%, 93%);
+  font-size: 1.2rem;
+}
+.info-container {
+  display: flex;
+}
+.indicator_progress_bar {
+  width: 100%;
+  height: 7px;
+  background-color: hsla(0, 0%, 100%, 0.699);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.925);
+}
+.indicator_progress {
+  background: radial-gradient(
+   
+    hsla(0, 0%, 100%, 0.699),
+    hsl(251, 100%, 50%)
+  );
+  
+  border-bottom: 1px solid rgba(89, 0, 255, 0.925);
+  width: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 7px;
+}
+.School_image_container {
+  width: 20%;
+}
+.School_image_container img {
+  width: 100%;
+}
+.rotate {
+  transform: rotate(180deg);
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}
+.bb {
+  transform: rotate(0deg);
+  transition: 0s ease-in-out;
+  cursor: pointer;
+}
+@keyframes fade {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.links_containers {
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+  
+}
+.Second_header_container {
+display: flex;
+justify-content: space-around;
+  width: 100%;
+  height: 67px;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.685);
+  border-bottom: 3px solid black;
+
+}
+.link_container {
+  width: 20%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  
+}
+.angle-tag {
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: none;
+  color: rgb(0, 17, 255);
+  font-size: 1.2em;
+  font-weight: 900;
+}
+.dispaly_flex {
+  animation-name: fade;
+  animation-duration: 3s;
+  background-color: hsla(0, 0%, 100%, 0.932);
+  display: flex;
+  flex-direction: column;
+  box-shadow: inset 1px -1px 10px hsl(253, 100%, 47%);
+  position: absolute;
+  top: 108%;
+  width: 105%;
+  cursor: pointer;
+  border-radius: 9px;
+  font-family: "Times New Roman", Times, serif;
+
+}
+li {
+  list-style: none;
+  margin: 12px 0;
+}
+.dispaly_flex li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  display: block;
+  /* background-color: hsla(0, 0%, 1%, 0.151); */
+  padding: 8px 0;
+  text-align: center;
+  width: 100%;
+  transition: background-color 2s, color 2s;
+}
+.dispaly_flex li a:hover {
+  background-color: hsla(0, 0%, 100%, 0.315);
+  color: blue;
+  font-weight: 800;
+}
+.Event_Contatact_container{
+  display: flex;
+  width: 10%;
+  justify-content: space-around;
+}

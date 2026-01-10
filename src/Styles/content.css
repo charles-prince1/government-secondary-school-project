@@ -1,0 +1,236 @@
+.main_container {
+  padding-top: 105px;
+}
+.information_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin-top: 7em;
+  background-color: hsla(226, 85%, 46%, 0.801);
+  padding: 40px 2px;
+}
+.information_container button {
+  border: none;
+  margin-right: 20px;
+  border-radius: 20px;
+  padding: 10px 25px;
+  font-size: 1em;
+  color: hsl(240, 100%, 50%);
+  font-family: "Times New Roman", Times, serif;
+  box-shadow: 3px 3px 17px hsl(0, 0%, 93%);
+  font-weight: 800;
+}
+/*  */
+.compliments_containers{
+  display: flex;
+  font-family: 'Times New Roman', Times, serif;
+  justify-content: space-around;
+  /* flex-direction: column; */
+  align-content: center;
+  flex-direction: row;
+  padding-top: 10rem;
+
+  width: 93%;
+  margin: auto;
+}
+.details{
+  display: flex;
+  width: 50%;
+  padding: 12px 0px;
+  
+}
+.text_content{
+  color: grey;
+  font-size: 19px;
+}
+.subtitle{
+  color: hsl(224, 93%, 53%);
+  font-style: normal;
+  padding-bottom: 20px;
+  font-size: 1.5rem;
+}
+.details img{
+  width: 170px;
+  height: 180px;
+  padding: 10px 20px;
+}
+.displayed{
+  position: fixed;
+  top: 9%;
+  width: 100%;
+  z-index: 98;
+  margin-right: 10px;
+}
+.auto{
+  width: 90%;
+}
+.heig{
+  height: 500px;
+  border-radius: 5px;
+}
+.cancelBtn {
+  position: absolute;
+  right: 50px;
+  top: -9px;
+  z-index: 200;
+  width: 39px;
+  height: 40px;
+  border-radius: 50%;
+  color: rgb(0, 153, 255);
+  background-color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  box-shadow: 1px 2px 15px black;
+  border: none;
+}
+.cancelBtn:hover{
+  color: red;
+}
+.displayNone{
+  display: none;
+}
+.display{
+  width: 400px;
+  height: 500px;
+  height: auto;
+ animation-name: fades;
+ animation-duration: 2s;
+  transition: all .5 ease-in-out;
+  border-radius: 10px;
+  border: 2px solid hsl(0, 0%, 37%);
+  box-shadow: 2px 5px 25px hsl(224, 100%, 51%);
+  
+}
+@keyframes fades {
+   
+  from{
+    opacity: .5;
+  right: -1000px;}
+ to {
+  opacity: 1;
+right: 0;}
+  
+}
+
+.latest_new_container h1{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+}
+.videoDisplay{
+display: inline-block;
+width: 97%;
+height: 510px;
+border-radius: 10px;
+border: 2px solid hsl(0, 0%, 99%);
+}
+.noDisplay{
+  display: none;
+}
+.new1{
+  position: relative;
+  width: 95%;
+
+}
+.btn{
+  position: absolute;
+  top: 40%;
+  width: 30px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: blue;
+}
+.leftHand{
+  left: 1rem;
+}
+.rightHand{
+  right: 3rem;
+}
+.details_about_news{
+  display: flex;
+  padding: 50px 0;
+}
+.News_and_Event{
+  display: flex;
+  margin-top: 10rem;
+  flex-direction: column;
+  padding: 30px 15px;
+  background-color: hsl(214, 89%, 55%);
+}
+.texts{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  color: white;
+}
+.downloadBtn{
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: none;
+  margin-left: 10px;
+  background-color: hsl(0, 0%, 89%);
+    font-family: 'Times New Roman', Times, serif, ;
+  text-decoration: none;
+  color:hsl(214, 89%, 55%);
+  letter-spacing: 0.1cm;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 1px 2px 15px white;
+}
+.dates{
+  background-color: hsl(214, 89%, 55%);
+  width: 100%;
+  position: relative;
+  border-radius: 5px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 6px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 10px;
+  justify-content: center;
+  align-content: center;
+  height: 79px;
+}
+.date{
+  width: 100%;
+  background-color: hsl(0, 0%, 100%);
+  text-align: center;
+  color:hsl(214, 89%, 55%);
+  font-family: 'Times New Roman', Times, serif;
+  padding: 1px 14px;
+  font-weight: bolder;
+  font-size: 2rem;
+  border-radius: 5px;
+}
+.second_text{
+  font-family: 'Times New Roman', Times, serif;
+  padding: 2px 0;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+.upcoming_dates_container{
+  margin-top: 15px;
+  padding: 30px 15px;
+display: flex;
+font-size: 0.9rem;
+}
+.date1{
+  display: flex;
+  width: 40%;
+}
+.details_about_date{
+  padding: 0px 12px;
+}
+.center{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color:hsl(214, 100%, 50%);
+  padding-top: 15px;
+  text-shadow: 2px 2px 3px black;
+}
