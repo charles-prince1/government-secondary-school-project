@@ -1,4 +1,4 @@
-import '../Styles/Anthem.css'
+import '../../Styles/Anthem.css'
 function Anthem() {
   return (
     <div className='bg_container'>

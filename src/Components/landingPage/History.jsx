@@ -1,6 +1,6 @@
-import SchoolLogo from "../images/School.png";
-import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import "../Styles/History.css";
+import SchoolLogo from "../../images/School.png";
+import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../../Styles/History.css";
 function History() {
   return (
     <div className="history_container">

@@ -1,5 +1,5 @@
 
-import "../Styles/footer.css";
+import "../../Styles/footer.css";
 function Footer() {
   let year = new Date().getFullYear();
   return (

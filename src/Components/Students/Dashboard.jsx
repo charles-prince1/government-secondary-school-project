@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 // import '../../node_modules/bootstrap/dist/js/bootstrap.min.js'
-import "../Styles/Dashboard.css";
+import "../../Styles/Dashboard.css";
 import StudentData from "./studensData";
 import {
   Offcanvas,
@@ -17,20 +17,20 @@ function Dashboard() {
   const [open, setOpen] = useState(false);
   const [toggle, setToggle] = useState(false);
   const [personDetails, setPersonDetails] = useState(false)
-  
+
 
 
   const handleShow = () => setToggle(true);
   const handleclose = () => setToggle(false);
-const handlesDetails = () => {
-setPersonDetails(true)
-if(personDetails){
-window.addEventListener('click',()=>{
-setPersonDetails(false)
-})
-}
-}
-  
+  const handlesDetails = () => {
+    setPersonDetails(true)
+    if (personDetails) {
+      window.addEventListener('click', () => {
+        setPersonDetails(false)
+      })
+    }
+  }
+
   return (
     <div className="d-flex flex-column">
       <div className="w-100 bg-primary shadow-sm ">
@@ -42,11 +42,11 @@ setPersonDetails(false)
         >
           <div className="Button"></div>
         </button>
-        {StudentData.map((student, index)=>(
-         <span className="d-flex float-end flex-column px-5 cursor-pointer justify-content-center align-content-center" onClick={handlesDetails}>
-           <img key={index} className={student.id === 0 ? " ms-5 round-circle" : null} alt="" />
-          <h5 className="fs-6">{student.id === 0 ? student.Student_name : null}</h5>
-         </span>
+        {StudentData.map((student, index) => (
+          <span className="d-flex float-end flex-column px-5 cursor-pointer justify-content-center align-content-center" onClick={handlesDetails}>
+            <img key={index} className={student.id === 0 ? " ms-5 round-circle" : null} alt="" />
+            <h5 className="fs-6">{student.id === 0 ? student.Student_name : null}</h5>
+          </span>
         ))}
       </div>
       <Offcanvas
@@ -200,9 +200,9 @@ setPersonDetails(false)
           </div>
         </OffcanvasBody>
       </Offcanvas>
-{personDetails === true ? <div>
-  hello
-  </div> : null}
+      {personDetails === true ? <div>
+        hello
+      </div> : null}
       <div className="d-flex ">
         <div className="bg-color text-primary w-100 pl-1 d-grid vh-100 ">
           {/* Dashboard layout */}
@@ -229,7 +229,7 @@ setPersonDetails(false)
                   </p>
                   <p>0 courses</p>
                 </div>
-                <div className="w bg-success cursor-pointer" onClick={()=>setLayout('Parents')}>
+                <div className="w bg-success cursor-pointer" onClick={() => setLayout('Parents')}>
                   <p className="text-align">Parents</p>
                   <span className="d-flex">
                     <p className="d-flex font-size">1 </p>
@@ -249,7 +249,7 @@ setPersonDetails(false)
                     </svg>
                   </span>
                 </div>
-                <div className="w bg-warning cursor-pointer" onClick={()=>setLayout('Result')}>
+                <div className="w bg-warning cursor-pointer" onClick={() => setLayout('Result')}>
                   <p className="text-center text-white cap">Result</p>
                 </div>
                 <div className="w bg-info">
@@ -267,20 +267,20 @@ setPersonDetails(false)
                 </p>
               </div>
               <div className="result_width m-auto">
-              <img src="" className="round-circle ms-5 mt-5" alt="" />
-              <div>
-                <div className="w-100">
-                 <div className="d-flex"> 
-                  <label htmlFor="" >Full Name:</label> &nbsp;
-                  <span >Anyanwu Isaac</span>
+                <img src="" className="round-circle ms-5 mt-5" alt="" />
+                <div>
+                  <div className="w-100">
+                    <div className="d-flex">
+                      <label htmlFor="" >Full Name:</label> &nbsp;
+                      <span >Anyanwu Isaac</span>
+                    </div>
+                    <div className="d-flex">
+                      <label htmlFor="">Email</label> &nbsp;
+                      <span>Chimmmmmm@gmail.com</span>
+                      <input type="text" value='chhhimmm' disabled className="border-0" id="" />
+                    </div>
                   </div>
-                 <div className="d-flex">
-                   <label htmlFor="">Email</label> &nbsp;
-                   <span>Chimmmmmm@gmail.com</span>
-                   <input type="text" value='chhhimmm' disabled className="border-0" id="" />
-                 </div>
                 </div>
-              </div>
               </div>
             </div>
           )}
@@ -308,40 +308,40 @@ setPersonDetails(false)
                     <option value="Jss1">SS3</option>
                   </select>
                 </span>
-                
-                    
-                {StudentData.map((student, index)=>(
-                  
-                 <div className={student.id === 0 ? 'd-grid': 'd-none' }>
-                  <h3 className="fs-4 text-primary-emphasis  text-shadow-0"> <strong className="text-primary">Name</strong> : {student.Student_name}</h3>
-                  <table className="w-100">
-                    <thead>
-                      <tr>
-                        <th className="bg-info text-black px-3 py-3 text-center border-end">Subjects</th>
-                        <th className="bg-info text-black px-3 py-3 text-center border-end">Tests</th>
-                        <th className="bg-info text-black px-3 py-3 text-center">Exam</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                     {student.Subjects.map((subjects, index)=>(
-                      <tr>
-                        <td className="px-2 py-1 bg-black border-bottom border-end">{subjects.name}</td>
-                        <td className="px-2 py-1 bg-black border-bottom border-end">{subjects.test_score}</td>
-                        <td className="px-2 py-1 bg-black border-bottom">{subjects.Exam_score}</td>
-                      </tr>
-                     ))}
-                    </tbody>
-                  </table>
-                 </div>
+
+
+                {StudentData.map((student, index) => (
+
+                  <div className={student.id === 0 ? 'd-grid' : 'd-none'}>
+                    <h3 className="fs-4 text-primary-emphasis  text-shadow-0"> <strong className="text-primary">Name</strong> : {student.Student_name}</h3>
+                    <table className="w-100">
+                      <thead>
+                        <tr>
+                          <th className="bg-info text-black px-3 py-3 text-center border-end">Subjects</th>
+                          <th className="bg-info text-black px-3 py-3 text-center border-end">Tests</th>
+                          <th className="bg-info text-black px-3 py-3 text-center">Exam</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {student.Subjects.map((subjects, index) => (
+                          <tr>
+                            <td className="px-2 py-1 bg-black border-bottom border-end">{subjects.name}</td>
+                            <td className="px-2 py-1 bg-black border-bottom border-end">{subjects.test_score}</td>
+                            <td className="px-2 py-1 bg-black border-bottom">{subjects.Exam_score}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
                 ))}
-                
+
               </div>
             </div>
           )}
         </div>
       </div>
     </div>
-    
+
   );
 }
 export default Dashboard;

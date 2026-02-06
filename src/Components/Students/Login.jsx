@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import "../Styles/Login.css";
+import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../../Styles/Login.css";
 function Login() {
   const [email, setemail] = useState("");
   const [password, setPassword] = useState("");
-//   d-flex m-auto m py-5 px-5 vh-100 justify-content-center align-items-center
+  //   d-flex m-auto m py-5 px-5 vh-100 justify-content-center align-items-center
   return (
     <form action="post" className="bg">
       <div className="d-flex w-100 ">
@@ -27,11 +27,12 @@ function Login() {
                   placeholder="Enter your email or username"
                   className="form-control w-200 bg-black text-info"
                   id="staticEmail"
+                  required
                 />
               </div>
             </div>
             <div className="mb-3 row">
-              <label for="inputPassword" class="col-sm-2 col-form-label">
+              <label for="inputPassword" class="w-100 col-sm-2 col-form-label">
                 Password
               </label>
               <br />
@@ -41,10 +42,14 @@ function Login() {
                   className="form-control bg-black text-info w-200"
                   id="inputPassword"
                   placeholder="Enter your password"
+                  required
                 />
+
+              </div>
+              <div>
                 <Link to="/forgtten_password" >Lost password</Link>
                 <br />
-                <input type="checkbox" name="password" id="" /> <br />
+                <input type="checkbox" name="password" className="float-start m-0" /> <br />
                 <button type="submit" className="bg-primary border">
                   Login
                 </button>
