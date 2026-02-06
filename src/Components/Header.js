@@ -72,8 +72,8 @@ function Header({change}) {
             <svg xmlns="http://www.w3" width="24" height="24" onClick={() => setNavigate(navigate === 'Students_portal' ? null : 'Students_portal')} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className={navigate === 'Students_portal' ? "rotate" : "bb"}><path d="m6 9 6 6 6-6"></path></svg>
             {navigate === 'Students_portal' && <ul className={navigate === 'Students_portal' && "dispaly_flex"}>
                <li><Link to='/Login'>Students portal</Link></li>
-              <li><a href=''>Check Result</a></li>
-              <li><a href=''>Admission List</a></li>
+              <li><a href='/'>Check Result</a></li>
+              <li><a href='/'>Admission List</a></li>
              
             </ul>}
           </div>
