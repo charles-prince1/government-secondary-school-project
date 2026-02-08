@@ -65,9 +65,9 @@ function Header({ change }) {
             <a href='/' target='_self' className='angle-tag' onClick={(e) => { setNavigate(navigate === 'administration' ? null : "administration"); e.preventDefault() }}>Administration</a>
             <svg xmlns="http://www.w3.org/2000/svg" onClick={() => setNavigate(navigate === 'administration' ? null : "administration")} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className={navigate === "administration" ? "rotate" : "bb"}><path d="m6 9 6 6 6-6"></path></svg>
             {navigate === 'administration' && <ul id='administration' className={navigate === 'administration' ? "dispaly_flex" : "display_none"}>
-              <li><a href=''>Principal office</a></li>
-              <li><a href=''>Teachers Office</a></li>
-              <li><a href=''>Staff's</a></li>
+              <li><a href='/'>Principal office</a></li>
+              <li><a href='/'>Teachers Office</a></li>
+              <li><a href='/'>Staff's</a></li>
 
             </ul>}
           </div>
@@ -83,8 +83,8 @@ function Header({ change }) {
              
 
               <li><Link to='/Login'>Students portal</Link></li>
-              <li><a href=''>Check Result</a></li>
-              <li><a href=''>Admission List</a></li>
+              <li><a href='/'>Check Result</a></li>
+              <li><a href='/'>Admission List</a></li>
 
 
             </ul>}
