@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-<<<<<<< HEAD:src/Components/Header.js
-import '../Styles/header.css'
-import SchoolImage from '../images/Name of school.jpg'
-function Header({change}) {
-=======
 import '../../Styles/header.css'
 import SchoolImage from '../../images/Name of school.jpg'
+
+
+
+
 function Header({ change }) {
->>>>>>> c2d1b95 (first commit):src/Components/landingPage/Header.js
+
   const [indicatorPercentage, setIndicatorPercentage] = useState(0)
   const [navigate, setNavigate] = useState('')
   function handleScrollPercentage() {
@@ -77,17 +76,17 @@ function Header({ change }) {
             <a href='/' target='_self' className='angle-tag' onClick={(e) => { setNavigate(navigate === 'Students_portal' ? null : 'Students_portal'); e.preventDefault() }}>Students</a>
             <svg xmlns="http://www.w3" width="24" height="24" onClick={() => setNavigate(navigate === 'Students_portal' ? null : 'Students_portal')} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className={navigate === 'Students_portal' ? "rotate" : "bb"}><path d="m6 9 6 6 6-6"></path></svg>
             {navigate === 'Students_portal' && <ul className={navigate === 'Students_portal' && "dispaly_flex"}>
-<<<<<<< HEAD:src/Components/Header.js
+
                <li><Link to='/Login'>Students portal</Link></li>
               <li><a href='/'>Check Result</a></li>
               <li><a href='/'>Admission List</a></li>
              
-=======
+
               <li><Link to='/Login'>Students portal</Link></li>
               <li><a href=''>Check Result</a></li>
               <li><a href=''>Admission List</a></li>
 
->>>>>>> c2d1b95 (first commit):src/Components/landingPage/Header.js
+
             </ul>}
           </div>
 
