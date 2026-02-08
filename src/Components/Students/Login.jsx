@@ -43,6 +43,7 @@ function Login() {
                   id="inputPassword"
                   placeholder="Enter your password"
                   required
+                  onChange={(e)=>SetPassword(e.target.value)}
                 />
 
               </div>
